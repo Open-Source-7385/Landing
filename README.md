@@ -2,7 +2,7 @@
 
 Landing page desarrollada en **HTML, CSS y JavaScript** para presentar **QuizBee**, una plataforma interactiva para aprender inglés mediante **quizzes, retos diarios, gamificación y práctica con hablantes expertos**.
 
----
+----
 
 ## 📖 Descripción
 
