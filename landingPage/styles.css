@@ -5,48 +5,42 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
-            min-height: 100vh;
-            color: #333;
-        }
+    /* ====== Estilos Generales ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e3a8a; /* Azul oscuro */
+    padding: 15px 30px;
+    color: #fff;
+}
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(45deg, #FF3D71, #FF9500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
+       .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
         .nav-buttons {
             display: flex;
             gap: 15px;
         }
 
-        .btn-empezar {
-            background: linear-gradient(135deg, #00D4FF, #5B2C87);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 50px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+        
+.btn-empezar {
+    background: #3b82f6; /* Azul medio */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
         .btn-empezar:hover {
             transform: translateY(-2px);
@@ -234,7 +228,7 @@
 
         /* Nuestros servicios */
         .services-card {
-            grid-column: 1 / 3;
+            grid-column: 1 /4;
             grid-row: 2 / 3;
         }
 
@@ -339,6 +333,75 @@
         .avatar:nth-child(2) { background: #00D4FF; }
         .avatar:nth-child(3) { background: #4CAF50; }
         .avatar:nth-child(4) { background: #FF9500; }
+/* Contacto */
+.contact-section {
+    background: #f0f9ff; /* Fondo azul muy claro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    color: #374151;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.3);
+}
+
+.btn-enviar {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background: #1e40af;
+}
 
         /* Pricing Section */
         .pricing-section {
@@ -496,6 +559,43 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
+        .testimonial h4 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #374151;
+}
+
+        /* Testimonios */
+.testimonials-section {
+    background: #e0f2fe; /* Azul claro muy suave */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+}
         @media (max-width: 768px) {
             .main-grid {
                 grid-template-columns: 1fr;
