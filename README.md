@@ -18,5 +18,3 @@ Está diseñada de manera **responsiva** (se adapta a dispositivos móviles, tab
 
 ---
 
-## 📂 Estructura del Proyecto
-
