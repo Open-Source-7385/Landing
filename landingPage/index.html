@@ -1,98 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizBee - Aprende un nuevo idioma</title>
-     <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuizzBee — Practica idiomas jugando</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta -->
+  <meta name="description" content="QuizzBee — plataforma gamificada para practicar idiomas: quizzes, retos y conexión con mentores." />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">QuizBee</div>
-        <div class="nav-buttons">
-            <button class="btn-empezar">Empezar Ahora</button>
-        </div>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <!-- Logo: reemplaza src por tu logo real -->
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="QuizzBee logo" id="brandLogo">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Acerca</a></li>
+        <li><a href="#features">Funcionalidades</a></li>
+        <li><a href="#segments">Segmentos</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#support">Soporte</a></li>
+        <li><a href="#download">Descarga</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-outline" id="profileBtn" title="Mi cuenta" aria-label="Mi cuenta">
+          <span class="avatar-placeholder" aria-hidden="true">U</span>
+        </button>
+
+        <a id="startBtn" class="btn-primary" href="#" role="button">Empezar ahora</a>
+
+        <button id="navToggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+      </div>
     </nav>
+  </header>
 
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-container container">
+      <div class="hero-text">
+        <h1>QuizzBee</h1>
+        <p class="lead">Aprende idiomas practicando: quizzes, retos y sesiones con hablantes reales — ¡divertido y efectivo!</p>
+
+        <div class="hero-cta">
+          <a id="heroStart" class="btn-primary large" href="#">Empezar ahora</a>
+          <a class="btn-ghost" href="#features">Ver funcionalidades</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>Quizzes</strong><span> Interactivos</span></li>       
+          <li><strong>Mentores</strong><span> Hablantes reales</span></li>
+          <li><strong>Recompensas</strong><span> Puntos y premios</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <!-- Reemplaza la imagen por hero-hero.jpg u otra -->
+        <img src="img/estudiante" alt="Estudiantes usando QuizzBee" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container section-grid">
+      <div class="card about-card">
+        <h2>Acerca de QuizzBee</h2>
+        <p><strong>Misión:</strong> Brindar una plataforma interactiva que promueva el aprendizaje colaborativo de idiomas mediante dinámicas lúdicas.</p>
+        <p><strong>Visión:</strong> Ser la plataforma líder en aprendizaje práctico de idiomas, combinando diversión, gamificación y recompensas.</p>
+        <p>QuizzBee conecta estudiantes con hablantes avanzados usando quizzes, retos y competencias para practicar de forma motivadora y efectiva.</p>
+      </div>
+
+      <div class="card about-image">
+        <img src="img/team.png" alt="Ilustración aprendizaje" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section light">
     <div class="container">
-        <div class="main-grid">
-            <!-- Hero Card -->
-            <div class="card hero-card">
-                <h1>QuizBee</h1>
-                <p>Aprende un nuevo idioma ,<br>empieza a hablar desde el<br>primer día</p>
-                <div class="world-visual">
-                    <div class="flags-container">
-                        <div class="flag">🇺🇸</div>
-                        <div class="flag">🇪🇸</div>
-                        <div class="flag">🇫🇷</div>
-                        <div class="flag">🇩🇪</div>
-                        <div class="flag">🇮🇹</div>
-                        <div class="flag">🇵🇹</div>
-                    </div>
-                </div>
-            </div>
+      <h2 class="section-title">Funcionalidades</h2>
+      <p class="section-sub">Diseñadas para practicar y mejorar con motivación</p>
 
-            <!-- ¿Quieres Soñar? -->
-            <div class="card dream-card">
-                <h2>¿Quieres Soñar?</h2>
-                <p><strong>Imagina Libertad</strong></p>
-                <p style="font-size: 0.9rem; color: #666; margin: 10px 0;">Domina un idioma y abre un mundo de posibilidades. Desde conversaciones espontáneas hasta oportunidades profesionales globales.</p>
-                <div class="illustration">🌟</div>
-                <p><strong>Interactividad</strong></p>
-                <p style="font-size: 0.9rem; color: #666;">Aprende con juegos dinámicos, reconocimiento de voz, y conversaciones reales. Cada lección es una aventura.</p>
-            </div>
+      <div class="grid features-grid">
+        <article class="feature">
+          <div class="feature-icon">🎯</div>
+          <h3>Quizzes interactivos</h3>
+          <p>Rápidos, por tema y con retroalimentación inmediata para consolidar tu aprendizaje.</p>
+        </article>
 
-            <!-- Funcionalidades -->
-            <div class="card features-card">
-                <h2>Funcionalidades</h2>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Aprende con nuestros divertidos, conversaciones gamificadas, práctica oral y flashcards dinámicas.</p>
-                <div class="feature-icons">
-                    <div class="feature-icon">🎯</div>
-                    <div class="feature-icon">💬</div>
-                    <div class="feature-icon">🎵</div>
-                    <div class="feature-icon">🏆</div>
-                </div>
-            </div>
+        <article class="feature">
+          <div class="feature-icon">⚔️</div>
+          <h3>Retos gamificados</h3>
+          <p>Compite con otros usuarios, sube en las tablas y gana recompensas.</p>
+        </article>
 
-            <!-- Nuestros Servicios -->
-            <div class="card services-card">
-                <h2>Nuestros Servicios</h2>
-                <div class="services-content">
-                    <div class="service-image">🚀</div>
-                    <div class="service-text">
-                        <p><strong>Conversaciones gamificadas</strong><br>
-                        Participa en diálogos interactivos con IA avanzada que se adapta a tu nivel y progreso.</p>
-                        
-                        <p><strong>Práctica personalizada</strong><br>
-                        Ejercicios adaptativos que se ajustan a tu ritmo de aprendizaje y áreas de mejora.</p>
-                        
-                        <div class="app-icons">
-                            <div class="app-icon app-store">📱 Descarga en App Store</div>
-                            <div class="app-icon google-play">🤖 Disponible en Google Play</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <article class="feature">
+          <div class="feature-icon">🏆</div>
+          <h3>Recompensas</h3>
+          <p>Canjea puntos por vidas, contenido exclusivo o reconocimientos.</p>
+        </article>
 
-            <!-- Conectanos -->
-            <div class="card connect-card">
-                <h2>Conectanos</h2>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Únete a nuestra comunidad global de aprendices. Practica con hablantes nativos.</p>
-                
-                <div class="connect-illustration">🌐</div>
-                
-                <p><strong>Nuestra comunidad</strong></p>
-                <p style="font-size: 0.9rem; color: #666;">Miles de estudiantes conectados, intercambiando culturas y practicando juntos cada día.</p>
-                
-                <div class="user-avatars">
-                    <div class="avatar">A</div>
-                    <div class="avatar">M</div>
-                    <div class="avatar">S</div>
-                    <div class="avatar">L</div>
-                </div>
-            </div>
-     
-            <!-- Pricing Section -->
+        <article class="feature">
+          <div class="feature-icon">💬</div>
+          <h3>Sesiones con mentores</h3>
+          <p>Conéctate con hablantes nativos y recibe feedback real.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">❤️</div>
+          <h3>Vidas limitadas</h3>
+          <p>Mecánica de vidas para incentivar el regreso diario y la retención.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGMENTS -->
+  <section id="segments" class="section">
+    <div class="container">
+      <h2 class="section-title">Segmentos objetivo</h2>
+      <p class="section-sub">A quién ayuda QuizzBee</p>
+
+      <div class="grid two-up">
+        <div class="card segment">
+          <h3>Quienes quieren reforzar lo aprendido</h3>
+          <p>Usuarios con base (nivel básico/intermedio) que buscan repasar y mantener hábitos con quizzes cortos.</p>
+          <ul>
+            <li>Edad 13–30</li>
+            <li>Interés: práctica periódica</li>
+            <li>Preferencia móvil y web</li>
+          </ul>
+        </div>
+
+        <div class="card segment featured-segment">
+          <h3>Hablantes avanzados / mentores</h3>
+          <p>Personas con dominio fluido que desean compartir su conocimiento y recibir reconocimiento.</p>
+          <ul>
+            <li>Edad 20–40</li>
+            <li>Interés: retos avanzados y recompensas</li>
+            <li>Beneficio: monetización / visibilidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="section light">
+    <div class="container">
+      <h2 class="section-title">Beneficios clave</h2>
+      <div class="grid benefits-grid">
+        <div class="benefit">
+          <h4>Aprendizaje práctico</h4>
+          <p>Práctica real con hablantes y ejercicios que simulan situaciones reales.</p>
+        </div>
+        <div class="benefit">
+          <h4>Motivación constante</h4>
+          <p>Gamificación para mantener el hábito de estudio.</p>
+        </div>
+        <div class="benefit">
+          <h4>Flexibilidad</h4>
+          <p>Acceso desde cualquier dispositivo, en cualquier lugar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Pricing Section -->
             <div class="pricing-section">
                 <h2 class="pricing-title">Tenemos el plan perfecto para ti</h2>
                 <div class="pricing-cards">
@@ -105,13 +193,15 @@
                         </div>
                         <ul class="plan-features">
                             <li>Acceso ilimitado a lecciones</li>
-                            <li>Video lecciones HD</li>
+                            <li>Vidas Ilimitadas</li>
                             <li>Práctica de habilidades</li>
                             <li>Seguimiento de progreso</li>
                             <li>Sin anuncios</li>
+                            <li>SpeakingRoom</li>
                         </ul>
                         <button class="plan-cta">Empezar Ahora</button>
                     </div>
+
 
                     <!-- Plan Super Familia (Featured) -->
                     <div class="pricing-card featured">
@@ -136,12 +226,12 @@
                         <div class="plan-header">
                             <div class="plan-name">ULTRA MEGA-PREMIUM</div>
                             <div class="plan-subtitle">La experiencia definitiva</div>
-                            <div class="plan-price">$49.99</div>
+                            <div class="plan-price">S/49.99</div>
                         </div>
                         <ul class="plan-features">
-                            <li>Profesional diario 1X8</li>
+                            <li>Puntuacion Diaria</li>
                             <li>Todo Premium Plus incluido</li>
-                            <li>Clases particulares con tutores</li>
+                            <li>SpeakingRoom ilimitados</li>
                             <li>Ejercicios de dominio avanzado</li>
                             <li>Certificados oficiales</li>
                             <li>Aprendizaje sin conexión</li>
@@ -151,88 +241,100 @@
                 </div>
             </div>
         </div>
+    </div>  
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <p class="section-sub">Lo que dicen nuestros usuarios</p>
+
+      <div class="grid testimonials-grid">
+        <figure class="testimonial card">
+          <blockquote>“Con QuizzBee mejoré mi fluidez en solo 2 meses. Las sesiones en vivo con mentores son increíbles.”</blockquote>
+          <figcaption>— Ana, estudiante (Perú)</figcaption>
+        </figure>
+
+        <figure class="testimonial card">
+          <blockquote>“Como mentor, gano puntos y visibilidad. La plataforma está bien diseñada para enseñar y ganar recompensas.”</blockquote>
+          <figcaption>— Marcos, mentor (España)</figcaption>
+        </figure>
+
+        <figure class="testimonial card">
+          <blockquote>“Los retos me mantienen motivado cada día. Me encanta competir en las tablas.”</blockquote>
+          <figcaption>— Lucia, usuaria (México)</figcaption>
+        </figure>
+      </div>
     </div>
-             <!-- Testimonios -->
-<div class="testimonials-section">
-    <h2>Lo que dicen nuestros estudiantes</h2>
-    <div class="testimonials">
-        <div class="testimonial">
-            <p>"Gracias a QuizBee ahora puedo hablar inglés con confianza en mi trabajo. ¡Es increíble!"</p>
-            <h4>- Ana, 28 años</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Los retos diarios me mantienen motivado. Aprender nunca fue tan divertido."</p>
-            <h4>- Carlos, 22 años</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Me encanta la comunidad. Siempre encuentro alguien con quien practicar."</p>
-            <h4>- María, 34 años</h4>
-        </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="section light">
+    <div class="container section-grid">
+      <div class="card">
+        <h2>Soporte</h2>
+        <p>¿Necesitas ayuda? Visita nuestro centro de ayuda o contáctanos por correo:</p>
+        <p><a href="mailto:soporte@quizbee.example">soporte@quizbee.example</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Preguntas frecuentes</h2>
+        <ul>
+          <li><strong>¿Es gratis?</strong> Tenemos plan básico gratuito y planes premium con ventajas.</li>
+          <li><strong>¿Cómo encuentro mentores?</strong> Hay un marketplace interno para conectarte con hablantes por idioma.</li>
+          <li><strong>¿Qué métodos de pago?</strong> Tarjeta, PayPal y medios locales.</li>
+        </ul>
+      </div>
     </div>
-</div> 
+  </section>
 
-    <!-- Contacto -->
-<div class="contact-section">
-    <h2>Contáctanos</h2>
-    <p>Completa el formulario y nos pondremos en contacto para ayudarte con lo que necesites.</p>
+  <!-- DOWNLOAD / CTA -->
+  <section id="download" class="cta-section">
+    <div class="container cta-grid">
+      <div>
+        <h2>Listo para practicar?</h2>
+        <p>Empieza ahora y transforma tu aprendizaje con quizzes y sesiones reales.</p>
+        <div class="cta-buttons">
+          <a id="downloadStart" class="btn-primary large" href="#">Empezar ahora</a>
+          <a class="btn-ghost" href="#testimonials">Ver testimonios</a>
+        </div>
+      </div>
 
-    <form class="contact-form">
-        <div class="form-group">
-            <label for="name">Nombre Completo:</label>
-            <input type="text" id="name" name="name" placeholder="Escribe tu nombre completo" required>
-        </div>
+      <div class="app-links">
+        <div class="store-badge">📱 Disponible en App Store</div>
+        <div class="store-badge">🤖 Google Play</div>
+        <p class="small">O usa la Web App</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-        </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="img/logo.png" alt="QuizzBee" class="footer-logo">
+        <p class="muted">© 2025 QuizzBee. Todos los derechos reservados.</p>
+      </div>
 
-        <div class="form-group">
-            <label for="subject">Asunto:</label>
-            <input type="text" id="subject" name="subject" placeholder="Motivo del mensaje" required>
-        </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="#about">Acerca</a><br>
+        <a href="#features">Funcionalidades</a><br>
+        <a href="#download">Empezar ahora</a>
+      </div>
 
-        <div class="form-group">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>soporte@quizbee.example</p>
+      </div>
 
-        <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-</div>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>QuizBee</h4>
-                <p>Tu plataforma de aprendizaje de idiomas más innovadora. Conectamos culturas a través del lenguaje.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Productos</h4>
-                <a href="#">App Móvil</a><br>
-                <a href="#">Web Platform</a><br>
-                <a href="#">API para Desarrolladores</a><br>
-                <a href="#">Certificaciones</a>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <a href="#">Centro de Ayuda</a><br>
-                <a href="#">Contacto</a><br>
-                <a href="#">Reportar Problema</a><br>
-                <a href="#">Estados del Sistema</a>
-            </div>
-            <div class="footer-section">
-                <h4>Síguenos</h4>
-                <a href="#">Facebook</a><br>
-                <a href="#">Instagram</a><br>
-                <a href="#">Twitter</a><br>
-                <a href="#">LinkedIn</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 QuizBee. Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad</p>
-        </div>
-    </footer>
+      <div>
+        <h4>Síguenos</h4>
+        <p>Twitter • Facebook • Instagram</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
-
 </html>
-
