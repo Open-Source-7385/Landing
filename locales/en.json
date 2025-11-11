@@ -1,0 +1,137 @@
+{
+  "navbar": {
+    "acerca": "About",
+    "funcionalidades": "Features",
+    "segmentos": "Segments",
+    "beneficios": "Benefits",
+    "testimonios": "Testimonials",
+    "soporte": "Support",
+    "descarga": "Download",
+    "empezar": "Start now"
+  },
+  "hero": {
+    "titulo": "QuizzBee",
+    "descripcion": "Learn languages by practicing: quizzes, challenges and sessions with real speakers — fun and effective!",
+    "empezar": "Start now",
+    "ver_funcionalidades": "See features"
+  },
+  "videos": {
+    "about_team": "About the team",
+    "about_product": "About the products"
+  },
+    "about": {
+      "titulo": "About QuizzBee",
+      "mision": "Provide an interactive platform that promotes collaborative language learning through playful dynamics.",
+      "vision": "To be the leading platform in practical language learning, combining fun, gamification, and rewards.",
+      "descripcion": "QuizzBee connects students with advanced speakers using quizzes, challenges, and competitions to practice in a motivating and effective way."
+    },
+      "features": {
+        "titulo": "Features",
+        "sub": "Designed to practice and improve with motivation",
+        "quiz": "Interactive quizzes",
+        "quiz_desc": "Fast, by topic and with immediate feedback to consolidate your learning.",
+        "retos": "Gamified challenges",
+        "retos_desc": "Compete with other users, climb the leaderboards and win rewards.",
+        "recompensas": "Rewards",
+        "recompensas_desc": "Redeem points for lives, exclusive content or recognition.",
+        "mentores": "Mentor sessions",
+        "mentores_desc": "Connect with native speakers and get real feedback.",
+        "vidas": "Limited lives",
+        "vidas_desc": "Lives mechanic to encourage daily return and retention."
+      },
+      "segments": {
+        "titulo": "Target segments",
+        "sub": "Who QuizzBee helps",
+        "reforzar": "Those who want to reinforce what they have learned",
+        "reforzar_desc": "Users with a base (basic/intermediate level) who want to review and maintain habits with short quizzes.",
+        "reforzar_edad": "Age 13–30",
+        "reforzar_interes": "Interest: periodic practice",
+        "reforzar_preferencia": "Preference: mobile and web",
+        "mentores": "Advanced speakers / mentors",
+        "mentores_desc": "People with fluent command who want to share their knowledge and receive recognition.",
+        "mentores_edad": "Age 20–40",
+        "mentores_interes": "Interest: advanced challenges and rewards",
+        "mentores_beneficio": "Benefit: monetization / visibility"
+      },
+      "benefits": {
+        "titulo": "Key benefits",
+        "practico": "Practical learning",
+        "practico_desc": "Real practice with speakers and exercises that simulate real situations.",
+        "motivacion": "Constant motivation",
+        "motivacion_desc": "Gamification to maintain the study habit.",
+        "flexibilidad": "Flexibility",
+        "flexibilidad_desc": "Access from any device, anywhere."
+      },
+    "pricing": {
+  "titulo": "We have the perfect plan for you",
+  "basico": "Basic Premium",
+  "basico_sub": "All the essentials",
+  "basico_precio": "$19.99",
+  "basico_lecciones": "Unlimited access to lessons",
+  "basico_vidas": "Unlimited lives",
+  "basico_habilidades": "Skills practice",
+  "basico_progreso": "Progress tracking",
+  "basico_anuncios": "No ads",
+  "basico_speaking": "SpeakingRoom",
+  "basico_cta": "Start Now",
+  "familia": "Super Family",
+  "familia_sub": "1 week free. Then, S/ 37.08 per month.",
+  "familia_precio": "S/ 37.08",
+  "familia_contenido": "Full learning content",
+  "familia_vidas": "Unlimited lives",
+  "familia_habilidades": "Advanced skills practice",
+  "familia_desafios": "Unlimited challenges",
+  "familia_anuncios": "No ads",
+  "familia_usuarios": "Up to 6 users can enjoy super-fast learning!",
+  "familia_cta": "Start Now",
+  "ultra": "ULTRA MEGA-PREMIUM",
+  "ultra_sub": "The ultimate experience",
+  "ultra_precio": "S/49.99",
+  "ultra_puntuacion": "Daily Score",
+  "ultra_plus": "All Premium Plus included",
+  "ultra_speaking": "Unlimited SpeakingRooms",
+  "ultra_ejercicios": "Advanced mastery exercises",
+  "ultra_certificados": "Official certificates",
+  "ultra_offline": "Offline learning",
+  "ultra_cta": "Start Now"
+    },
+  "testimonials": {
+    "titulo": "Testimonials",
+    "sub": "What our users say",
+    "1": {"text": "With QuizzBee I improved my fluency in just 2 months. The live mentor sessions are amazing.", "author": "— Ana, student (Peru)"},
+    "2": {"text": "As a mentor, I earn points and visibility. The platform is well designed for teaching and earning rewards.", "author": "— Marcos, mentor (Spain)"},
+    "3": {"text": "The challenges keep me motivated every day. I love competing on the leaderboards.", "author": "— Lucia, user (Mexico)"}
+  },
+  "support": {
+    "titulo": "Support",
+    "text": "Need help? Visit our help center or contact us by email:",
+    "email": "support@quizbee.example"
+  },
+  "faq": {
+    "titulo": "Frequently Asked Questions",
+    "1": {"q": "Is it free?", "a": "We have a free basic plan and premium plans with advantages."},
+    "2": {"q": "How do I find mentors?", "a": "There is an internal marketplace to connect with speakers by language."},
+    "3": {"q": "What payment methods?", "a": "Card, PayPal and local methods."}
+  },
+  "cta": {
+    "titulo": "Ready to practice?",
+    "texto": "Start now and transform your learning with quizzes and real sessions.",
+    "empezar": "Start now",
+    "ver_testimonios": "See testimonials",
+    "appstore": "📱 Available on App Store",
+    "playstore": "🤖 Google Play",
+    "webapp": "Or use the Web App"
+  },
+  "footer": {
+    "copyright": "© 2025 QuizzBee. All rights reserved.",
+    "enlaces": "Links",
+    "about": "About",
+    "features": "Features",
+    "empezar": "Start now",
+    "contacto": "Contact",
+    "email": "support@quizbee.example",
+    "siguenos": "Follow us",
+    "redes": "Twitter • Facebook • Instagram",
+    "transforma": "Start now and transform your learning with quizzes and real sessions."
+  }
+}

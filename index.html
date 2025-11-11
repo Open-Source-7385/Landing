@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>QuizzBee — Practica idiomas jugando</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo.png" />
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -25,21 +28,20 @@
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">Acerca</a></li>
-        <li><a href="#features">Funcionalidades</a></li>
-        <li><a href="#segments">Segmentos</a></li>
-        <li><a href="#benefits">Beneficios</a></li>
-        <li><a href="#testimonials">Testimonios</a></li>
-        <li><a href="#support">Soporte</a></li>
-        <li><a href="#download">Descarga</a></li>
+        <li><a href="#about" data-i18n="navbar.acerca">Acerca</a></li>
+        <li><a href="#features" data-i18n="navbar.funcionalidades">Funcionalidades</a></li>
+        <li><a href="#segments" data-i18n="navbar.segmentos">Segmentos</a></li>
+        <li><a href="#benefits" data-i18n="navbar.beneficios">Beneficios</a></li>
+        <li><a href="#testimonials" data-i18n="navbar.testimonios">Testimonios</a></li>
+        <li><a href="#support" data-i18n="navbar.soporte">Soporte</a></li>
+        <li><a href="#download" data-i18n="navbar.descarga">Descarga</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="btn-outline" id="profileBtn" title="Mi cuenta" aria-label="Mi cuenta">
-          <span class="avatar-placeholder" aria-hidden="true">U</span>
-        </button>
 
-        <a id="startBtn" class="btn-primary" href="#" role="button">Empezar ahora</a>
+    <button class="lang-btn" onclick="changeLang('es')">ES</button>
+    <button class="lang-btn" onclick="changeLang('en')">EN</button>
+    <a id="startBtn" class="btn-primary" href="#" role="button" data-i18n="navbar.empezar">Empezar ahora</a>
 
         <button id="navToggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger"></span>
@@ -52,12 +54,12 @@
   <section class="hero" id="home" aria-label="Hero">
     <div class="hero-container container">
       <div class="hero-text">
-        <h1>QuizzBee</h1>
-        <p class="lead">Aprende idiomas practicando: quizzes, retos y sesiones con hablantes reales — ¡divertido y efectivo!</p>
+        <h1 data-i18n="hero.titulo">QuizzBee</h1>
+        <p class="lead" data-i18n="hero.descripcion">Aprende idiomas practicando: quizzes, retos y sesiones con hablantes reales — ¡divertido y efectivo!</p>
 
         <div class="hero-cta">
-          <a id="heroStart" class="btn-primary large" href="#">Empezar ahora</a>
-          <a class="btn-ghost" href="#features">Ver funcionalidades</a>
+         <a id="heroStart" class="btn-primary large" href="#" data-i18n="hero.empezar">Empezar ahora</a>
+         <a class="btn-ghost" href="#features" data-i18n="hero.ver_funcionalidades">Ver funcionalidades</a>
         </div>
 
         <ul class="hero-stats">
@@ -74,14 +76,34 @@
     </div>
   </section>
 
+    <!-- VIDEOS SECTION -->
+    <section class="videos-section">
+      <div class="container videos-grid">
+        <div class="video-col">
+         <h2 data-i18n="videos.about_team">Sobre el equipo</h2>
+          <video controls width="100%" poster="img/estudiante/team-poster.png">
+            <source src="videos/about-team.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+        <div class="video-col">
+         <h2 data-i18n="videos.about_product">Sobre los productos</h2>
+          <video controls width="100%" poster="img/estudiante/product-poster.png">
+            <source src="videos/about-product.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+    </section>
+
   <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container section-grid">
       <div class="card about-card">
-        <h2>Acerca de QuizzBee</h2>
-        <p><strong>Misión:</strong> Brindar una plataforma interactiva que promueva el aprendizaje colaborativo de idiomas mediante dinámicas lúdicas.</p>
-        <p><strong>Visión:</strong> Ser la plataforma líder en aprendizaje práctico de idiomas, combinando diversión, gamificación y recompensas.</p>
-        <p>QuizzBee conecta estudiantes con hablantes avanzados usando quizzes, retos y competencias para practicar de forma motivadora y efectiva.</p>
+      <h2 data-i18n="about.titulo">Acerca de QuizzBee</h2>
+      <p data-i18n="about.mision"><strong>Misión:</strong> Brindar una plataforma interactiva que promueva el aprendizaje colaborativo de idiomas mediante dinámicas lúdicas.</p>
+      <p data-i18n="about.vision"><strong>Visión:</strong> Ser la plataforma líder en aprendizaje práctico de idiomas, combinando diversión, gamificación y recompensas.</p>
+      <p data-i18n="about.descripcion">QuizzBee conecta estudiantes con hablantes avanzados usando quizzes, retos y competencias para practicar de forma motivadora y efectiva.</p>
       </div>
 
       <div class="card about-image">
@@ -93,38 +115,39 @@
   <!-- FEATURES -->
   <section id="features" class="section light">
     <div class="container">
-      <h2 class="section-title">Funcionalidades</h2>
-      <p class="section-sub">Diseñadas para practicar y mejorar con motivación</p>
+    
+    <h2 class="section-title" data-i18n="features.titulo">Funcionalidades</h2>
+    <p class="section-sub" data-i18n="features.sub">Diseñadas para practicar y mejorar con motivación</p>
 
       <div class="grid features-grid">
         <article class="feature">
           <div class="feature-icon">🎯</div>
-          <h3>Quizzes interactivos</h3>
-          <p>Rápidos, por tema y con retroalimentación inmediata para consolidar tu aprendizaje.</p>
+            <h3 data-i18n="features.quiz">Quizzes interactivos</h3>
+            <p data-i18n="features.quiz_desc">Rápidos, por tema y con retroalimentación inmediata para consolidar tu aprendizaje.</p>
         </article>
 
         <article class="feature">
           <div class="feature-icon">⚔️</div>
-          <h3>Retos gamificados</h3>
-          <p>Compite con otros usuarios, sube en las tablas y gana recompensas.</p>
+            <h3 data-i18n="features.retos">Retos gamificados</h3>
+            <p data-i18n="features.retos_desc">Compite con otros usuarios, sube en las tablas y gana recompensas.</p>
         </article>
 
         <article class="feature">
           <div class="feature-icon">🏆</div>
-          <h3>Recompensas</h3>
-          <p>Canjea puntos por vidas, contenido exclusivo o reconocimientos.</p>
+            <h3 data-i18n="features.recompensas">Recompensas</h3>
+            <p data-i18n="features.recompensas_desc">Canjea puntos por vidas, contenido exclusivo o reconocimientos.</p>
         </article>
 
         <article class="feature">
           <div class="feature-icon">💬</div>
-          <h3>Sesiones con mentores</h3>
-          <p>Conéctate con hablantes nativos y recibe feedback real.</p>
+            <h3 data-i18n="features.mentores">Sesiones con mentores</h3>
+            <p data-i18n="features.mentores_desc">Conéctate con hablantes nativos y recibe feedback real.</p>
         </article>
 
         <article class="feature">
           <div class="feature-icon">❤️</div>
-          <h3>Vidas limitadas</h3>
-          <p>Mecánica de vidas para incentivar el regreso diario y la retención.</p>
+            <h3 data-i18n="features.vidas">Vidas limitadas</h3>
+            <p data-i18n="features.vidas_desc">Mecánica de vidas para incentivar el regreso diario y la retención.</p>
         </article>
       </div>
     </div>
@@ -133,13 +156,19 @@
   <!-- SEGMENTS -->
   <section id="segments" class="section">
     <div class="container">
-      <h2 class="section-title">Segmentos objetivo</h2>
+    <h2 class="section-title" data-i18n="segments.titulo">Segmentos objetivo</h2>
       <p class="section-sub">A quién ayuda QuizzBee</p>
+    <p class="section-sub" data-i18n="segments.sub">A quién ayuda QuizzBee</p>
 
       <div class="grid two-up">
         <div class="card segment">
-          <h3>Quienes quieren reforzar lo aprendido</h3>
-          <p>Usuarios con base (nivel básico/intermedio) que buscan repasar y mantener hábitos con quizzes cortos.</p>
+         <h3 data-i18n="segments.reforzar">Quienes quieren reforzar lo aprendido</h3>
+      <p data-i18n="segments.reforzar_desc">Usuarios con base (nivel básico/intermedio) que buscan repasar y mantener hábitos con quizzes cortos.</p>
+      <ul>
+        <li data-i18n="segments.reforzar_edad">Edad 13–30</li>
+        <li data-i18n="segments.reforzar_interes">Interés: práctica periódica</li>
+        <li data-i18n="segments.reforzar_preferencia">Preferencia móvil y web</li>
+      </ul>
           <ul>
             <li>Edad 13–30</li>
             <li>Interés: práctica periódica</li>
@@ -148,8 +177,13 @@
         </div>
 
         <div class="card segment featured-segment">
-          <h3>Hablantes avanzados / mentores</h3>
-          <p>Personas con dominio fluido que desean compartir su conocimiento y recibir reconocimiento.</p>
+         <h3 data-i18n="segments.mentores">Hablantes avanzados / mentores</h3>
+      <p data-i18n="segments.mentores_desc">Personas con dominio fluido que desean compartir su conocimiento y recibir reconocimiento.</p>
+      <ul>
+        <li data-i18n="segments.mentores_edad">Edad 20–40</li>
+        <li data-i18n="segments.mentores_interes">Interés: retos avanzados y recompensas</li>
+        <li data-i18n="segments.mentores_beneficio">Beneficio: monetización / visibilidad</li>
+      </ul>
           <ul>
             <li>Edad 20–40</li>
             <li>Interés: retos avanzados y recompensas</li>
@@ -163,80 +197,98 @@
   <!-- BENEFITS -->
   <section id="benefits" class="section light">
     <div class="container">
-      <h2 class="section-title">Beneficios clave</h2>
+    <h2 class="section-title" data-i18n="benefits.titulo">Beneficios clave</h2>
       <div class="grid benefits-grid">
         <div class="benefit">
-          <h4>Aprendizaje práctico</h4>
-          <p>Práctica real con hablantes y ejercicios que simulan situaciones reales.</p>
+         <h4 data-i18n="benefits.practico">Aprendizaje práctico</h4>
+         <p data-i18n="benefits.practico_desc">Práctica real con hablantes y ejercicios que simulan situaciones reales.</p>
         </div>
         <div class="benefit">
-          <h4>Motivación constante</h4>
-          <p>Gamificación para mantener el hábito de estudio.</p>
+         <h4 data-i18n="benefits.motivacion">Motivación constante</h4>
+         <p data-i18n="benefits.motivacion_desc">Gamificación para mantener el hábito de estudio.</p>
         </div>
         <div class="benefit">
-          <h4>Flexibilidad</h4>
-          <p>Acceso desde cualquier dispositivo, en cualquier lugar.</p>
+         <h4 data-i18n="benefits.flexibilidad">Flexibilidad</h4>
+         <p data-i18n="benefits.flexibilidad_desc">Acceso desde cualquier dispositivo, en cualquier lugar.</p>
         </div>
       </div>
     </div>
   </section>
     <!-- Pricing Section -->
             <div class="pricing-section">
-                <h2 class="pricing-title">Tenemos el plan perfecto para ti</h2>
+                  <h2 class="pricing-title" data-i18n="pricing.titulo">Tenemos el plan perfecto para ti</h2>
                 <div class="pricing-cards">
                     <!-- Plan Básico -->
                     <div class="pricing-card">
                         <div class="plan-header">
-                            <div class="plan-name">Básico Premium</div>
-                            <div class="plan-subtitle">Todo lo esencial</div>
-                            <div class="plan-price">$19.99</div>
+                              <div class="plan-name" data-i18n="pricing.basico">Básico Premium</div>
+                              <div class="plan-subtitle" data-i18n="pricing.basico_sub">Todo lo esencial</div>
+                              <div class="plan-price" data-i18n="pricing.basico_precio">$19.99</div>
                         </div>
                         <ul class="plan-features">
                             <li>Acceso ilimitado a lecciones</li>
+                              <li data-i18n="pricing.basico_lecciones">Acceso ilimitado a lecciones</li>
                             <li>Vidas Ilimitadas</li>
+                              <li data-i18n="pricing.basico_vidas">Vidas Ilimitadas</li>
                             <li>Práctica de habilidades</li>
+                              <li data-i18n="pricing.basico_habilidades">Práctica de habilidades</li>
                             <li>Seguimiento de progreso</li>
+                              <li data-i18n="pricing.basico_progreso">Seguimiento de progreso</li>
                             <li>Sin anuncios</li>
+                              <li data-i18n="pricing.basico_anuncios">Sin anuncios</li>
                             <li>SpeakingRoom</li>
+                              <li data-i18n="pricing.basico_speaking">SpeakingRoom</li>
                         </ul>
-                        <button class="plan-cta">Empezar Ahora</button>
+                          <button class="plan-cta" data-i18n="pricing.basico_cta">Empezar Ahora</button>
                     </div>
 
 
                     <!-- Plan Super Familia (Featured) -->
                     <div class="pricing-card featured">
                         <div class="plan-header">
-                            <div class="plan-name">Super Familia</div>
-                            <div class="plan-subtitle">1 semana gratis. Luego, S/ 37.08 al mes.</div>
-                            <div class="plan-price">S/ 37.08</div>
+                              <div class="plan-name" data-i18n="pricing.familia">Super Familia</div>
+                              <div class="plan-subtitle" data-i18n="pricing.familia_sub">1 semana gratis</div>
+                              <div class="plan-price" data-i18n="pricing.familia_precio">$ 37.08</div>
                         </div>
                         <ul class="plan-features">
                             <li>Contenido de aprendizaje completo</li>
+                              <li data-i18n="pricing.familia_contenido">Contenido de aprendizaje completo</li>
                             <li>Vidas ilimitadas</li>
+                              <li data-i18n="pricing.familia_vidas">Vidas ilimitadas</li>
                             <li>Práctica de habilidades avanzada</li>
+                              <li data-i18n="pricing.familia_habilidades">Práctica de habilidades avanzada</li>
                             <li>Desafíos sin límites</li>
+                              <li data-i18n="pricing.familia_desafios">Desafíos sin límites</li>
                             <li>Sin anuncios</li>
+                              <li data-i18n="pricing.familia_anuncios">Sin anuncios</li>
                             <li>¡Hasta 6 usuarios pueden disfrutar de un aprendizaje súper veloz!</li>
+                              <li data-i18n="pricing.familia_usuarios">¡Hasta 6 usuarios pueden disfrutar de un aprendizaje súper veloz!</li>
                         </ul>
-                        <button class="plan-cta">Empezar Ahora</button>
+                          <button class="plan-cta" data-i18n="pricing.familia_cta">Empezar Ahora</button>
                     </div>
 
                     <!-- Plan Ultra Premium -->
                     <div class="pricing-card">
                         <div class="plan-header">
-                            <div class="plan-name">ULTRA MEGA-PREMIUM</div>
-                            <div class="plan-subtitle">La experiencia definitiva</div>
-                            <div class="plan-price">S/49.99</div>
+                              <div class="plan-name" data-i18n="pricing.ultra">ULTRA MEGA-PREMIUM</div>
+                              <div class="plan-subtitle" data-i18n="pricing.ultra_sub">La experiencia definitiva</div>
+                              <div class="plan-price" data-i18n="pricing.ultra_precio">S/49.99</div>
                         </div>
                         <ul class="plan-features">
                             <li>Puntuacion Diaria</li>
+                              <li data-i18n="pricing.ultra_puntuacion">Puntuacion Diaria</li>
                             <li>Todo Premium Plus incluido</li>
+                              <li data-i18n="pricing.ultra_plus">Todo Premium Plus incluido</li>
                             <li>SpeakingRoom ilimitados</li>
+                              <li data-i18n="pricing.ultra_speaking">SpeakingRoom ilimitados</li>
                             <li>Ejercicios de dominio avanzado</li>
+                              <li data-i18n="pricing.ultra_ejercicios">Ejercicios de dominio avanzado</li>
                             <li>Certificados oficiales</li>
+                              <li data-i18n="pricing.ultra_certificados">Certificados oficiales</li>
                             <li>Aprendizaje sin conexión</li>
+                              <li data-i18n="pricing.ultra_offline">Aprendizaje sin conexión</li>
                         </ul>
-                        <button class="plan-cta">Empezar Ahora</button>
+                          <button class="plan-cta" data-i18n="pricing.ultra_cta">Empezar Ahora</button>
                     </div>
                 </div>
             </div>
@@ -245,23 +297,23 @@
   <!-- TESTIMONIALS -->
   <section id="testimonials" class="section">
     <div class="container">
-      <h2 class="section-title">Testimonios</h2>
-      <p class="section-sub">Lo que dicen nuestros usuarios</p>
+      <h2 class="section-title" data-i18n="testimonials.titulo">Testimonios</h2>
+      <p class="section-sub" data-i18n="testimonials.sub">Lo que dicen nuestros usuarios</p>
 
       <div class="grid testimonials-grid">
         <figure class="testimonial card">
-          <blockquote>“Con QuizzBee mejoré mi fluidez en solo 2 meses. Las sesiones en vivo con mentores son increíbles.”</blockquote>
-          <figcaption>— Ana, estudiante (Perú)</figcaption>
+          <blockquote data-i18n="testimonials.1.text">“Con QuizzBee mejoré mi fluidez en solo 2 meses. Las sesiones en vivo con mentores son increíbles.”</blockquote>
+          <figcaption data-i18n="testimonials.1.author">— Ana, estudiante (Perú)</figcaption>
         </figure>
 
         <figure class="testimonial card">
-          <blockquote>“Como mentor, gano puntos y visibilidad. La plataforma está bien diseñada para enseñar y ganar recompensas.”</blockquote>
-          <figcaption>— Marcos, mentor (España)</figcaption>
+          <blockquote data-i18n="testimonials.2.text">“Como mentor, gano puntos y visibilidad. La plataforma está bien diseñada para enseñar y ganar recompensas.”</blockquote>
+          <figcaption data-i18n="testimonials.2.author">— Marcos, mentor (España)</figcaption>
         </figure>
 
         <figure class="testimonial card">
-          <blockquote>“Los retos me mantienen motivado cada día. Me encanta competir en las tablas.”</blockquote>
-          <figcaption>— Lucia, usuaria (México)</figcaption>
+          <blockquote data-i18n="testimonials.3.text">“Los retos me mantienen motivado cada día. Me encanta competir en las tablas.”</blockquote>
+          <figcaption data-i18n="testimonials.3.author">— Lucia, usuaria (México)</figcaption>
         </figure>
       </div>
     </div>
@@ -271,17 +323,17 @@
   <section id="support" class="section light">
     <div class="container section-grid">
       <div class="card">
-        <h2>Soporte</h2>
-        <p>¿Necesitas ayuda? Visita nuestro centro de ayuda o contáctanos por correo:</p>
-        <p><a href="mailto:soporte@quizbee.example">soporte@quizbee.example</a></p>
+        <h2 data-i18n="support.titulo">Soporte</h2>
+        <p data-i18n="support.text">¿Necesitas ayuda? Visita nuestro centro de ayuda o contáctanos por correo:</p>
+        <p><a href="mailto:soporte@quizbee.example" data-i18n="support.email">soporte@quizbee.example</a></p>
       </div>
 
       <div class="card">
-        <h2>Preguntas frecuentes</h2>
+        <h2 data-i18n="faq.titulo">Preguntas frecuentes</h2>
         <ul>
-          <li><strong>¿Es gratis?</strong> Tenemos plan básico gratuito y planes premium con ventajas.</li>
-          <li><strong>¿Cómo encuentro mentores?</strong> Hay un marketplace interno para conectarte con hablantes por idioma.</li>
-          <li><strong>¿Qué métodos de pago?</strong> Tarjeta, PayPal y medios locales.</li>
+          <li><strong data-i18n="faq.1.q">¿Es gratis?</strong> <span data-i18n="faq.1.a">Tenemos plan básico gratuito y planes premium con ventajas.</span></li>
+          <li><strong data-i18n="faq.2.q">¿Cómo encuentro mentores?</strong> <span data-i18n="faq.2.a">Hay un marketplace interno para conectarte con hablantes por idioma.</span></li>
+          <li><strong data-i18n="faq.3.q">¿Qué métodos de pago?</strong> <span data-i18n="faq.3.a">Tarjeta, PayPal y medios locales.</span></li>
         </ul>
       </div>
     </div>
@@ -291,18 +343,18 @@
   <section id="download" class="cta-section">
     <div class="container cta-grid">
       <div>
-        <h2>Listo para practicar?</h2>
-        <p>Empieza ahora y transforma tu aprendizaje con quizzes y sesiones reales.</p>
+        <h2 data-i18n="cta.titulo">Listo para practicar?</h2>
+        <p data-i18n="cta.texto">Empieza ahora y transforma tu aprendizaje con quizzes y sesiones reales.</p>
         <div class="cta-buttons">
-          <a id="downloadStart" class="btn-primary large" href="#">Empezar ahora</a>
-          <a class="btn-ghost" href="#testimonials">Ver testimonios</a>
+          <a id="downloadStart" class="btn-primary large" href="#" data-i18n="cta.empezar">Empezar ahora</a>
+          <a class="btn-ghost" href="#testimonials" data-i18n="cta.ver_testimonios">Ver testimonios</a>
         </div>
       </div>
 
       <div class="app-links">
-        <div class="store-badge">📱 Disponible en App Store</div>
-        <div class="store-badge">🤖 Google Play</div>
-        <p class="small">O usa la Web App</p>
+        <div class="store-badge" data-i18n="cta.appstore">📱 Disponible en App Store</div>
+        <div class="store-badge" data-i18n="cta.playstore">🤖 Google Play</div>
+        <p class="small" data-i18n="cta.webapp">O usa la Web App</p>
       </div>
     </div>
   </section>
@@ -312,30 +364,31 @@
     <div class="container footer-grid">
       <div>
         <img src="img/logo.png" alt="QuizzBee" class="footer-logo">
-        <p class="muted">© 2025 QuizzBee. Todos los derechos reservados.</p>
+        <p class="muted" data-i18n="footer.copyright">© 2025 QuizzBee. Todos los derechos reservados.</p>
       </div>
 
       <div>
-        <h4>Enlaces</h4>
-        <a href="#about">Acerca</a><br>
-        <a href="#features">Funcionalidades</a><br>
-        <a href="#download">Empezar ahora</a>
+        <h4 data-i18n="footer.enlaces">Enlaces</h4>
+        <a href="#about" data-i18n="footer.about">Acerca</a><br>
+        <a href="#features" data-i18n="footer.features">Funcionalidades</a><br>
+        <a href="#download" data-i18n="footer.empezar">Empezar ahora</a>
       </div>
 
       <div>
-        <h4>Contacto</h4>
-        <p>soporte@quizbee.example</p>
+        <h4 data-i18n="footer.contacto">Contacto</h4>
+        <p data-i18n="footer.email">soporte@quizbee.example</p>
       </div>
 
       <div>
-        <h4>Síguenos</h4>
-        <p>Twitter • Facebook • Instagram</p>
+        <h4 data-i18n="footer.siguenos">Síguenos</h4>
+        <p data-i18n="footer.redes">Twitter • Facebook • Instagram</p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="scripts.js"></script>
+    <script src="i18n.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
 

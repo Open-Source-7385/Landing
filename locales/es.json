@@ -1,0 +1,137 @@
+{
+  "navbar": {
+    "acerca": "Acerca",
+    "funcionalidades": "Funcionalidades",
+    "segmentos": "Segmentos",
+    "beneficios": "Beneficios",
+    "testimonios": "Testimonios",
+    "soporte": "Soporte",
+    "descarga": "Descarga",
+    "empezar": "Empezar ahora"
+  },
+  "hero": {
+    "titulo": "QuizzBee",
+    "descripcion": "Aprende idiomas practicando: quizzes, retos y sesiones con hablantes reales — ¡divertido y efectivo!",
+    "empezar": "Empezar ahora",
+    "ver_funcionalidades": "Ver funcionalidades"
+  },
+  "videos": {
+    "about_team": "Sobre el equipo",
+    "about_product": "Sobre los productos"
+  },
+    "about": {
+      "titulo": "Acerca de QuizzBee",
+      "mision": "Brindar una plataforma interactiva que promueva el aprendizaje colaborativo de idiomas mediante dinámicas lúdicas.",
+      "vision": "Ser la plataforma líder en aprendizaje práctico de idiomas, combinando diversión, gamificación y recompensas.",
+      "descripcion": "QuizzBee conecta estudiantes con hablantes avanzados usando quizzes, retos y competencias para practicar de forma motivadora y efectiva."
+    },
+      "features": {
+        "titulo": "Funcionalidades",
+        "sub": "Diseñadas para practicar y mejorar con motivación",
+        "quiz": "Quizzes interactivos",
+        "quiz_desc": "Rápidos, por tema y con retroalimentación inmediata para consolidar tu aprendizaje.",
+        "retos": "Retos gamificados",
+        "retos_desc": "Compite con otros usuarios, sube en las tablas y gana recompensas.",
+        "recompensas": "Recompensas",
+        "recompensas_desc": "Canjea puntos por vidas, contenido exclusivo o reconocimientos.",
+        "mentores": "Sesiones con mentores",
+        "mentores_desc": "Conéctate con hablantes nativos y recibe feedback real.",
+        "vidas": "Vidas limitadas",
+        "vidas_desc": "Mecánica de vidas para incentivar el regreso diario y la retención."
+      },
+        "pricing": {
+          "titulo": "Tenemos el plan perfecto para ti",
+          "basico": "Básico Premium",
+          "basico_sub": "Todo lo esencial",
+          "basico_precio": "$19.99",
+          "basico_lecciones": "Acceso ilimitado a lecciones",
+          "basico_vidas": "Vidas Ilimitadas",
+          "basico_habilidades": "Práctica de habilidades",
+          "basico_progreso": "Seguimiento de progreso",
+          "basico_anuncios": "Sin anuncios",
+          "basico_speaking": "SpeakingRoom",
+          "basico_cta": "Empezar Ahora",
+          "familia": "Super Familia",
+          "familia_sub": "1 semana gratis. Luego, S/ 37.08 al mes.",
+          "familia_precio": "S/ 37.08",
+          "familia_contenido": "Contenido de aprendizaje completo",
+          "familia_vidas": "Vidas ilimitadas",
+          "familia_habilidades": "Práctica de habilidades avanzada",
+          "familia_desafios": "Desafíos sin límites",
+          "familia_anuncios": "Sin anuncios",
+          "familia_usuarios": "¡Hasta 6 usuarios pueden disfrutar de un aprendizaje súper veloz!",
+          "familia_cta": "Empezar Ahora",
+          "ultra": "ULTRA MEGA-PREMIUM",
+          "ultra_sub": "La experiencia definitiva",
+          "ultra_precio": "S/49.99",
+          "ultra_puntuacion": "Puntuacion Diaria",
+          "ultra_plus": "Todo Premium Plus incluido",
+          "ultra_speaking": "SpeakingRoom ilimitados",
+          "ultra_ejercicios": "Ejercicios de dominio avanzado",
+          "ultra_certificados": "Certificados oficiales",
+          "ultra_offline": "Aprendizaje sin conexión",
+          "ultra_cta": "Empezar Ahora"
+        },
+      "segments": {
+        "titulo": "Segmentos objetivo",
+        "sub": "A quién ayuda QuizzBee",
+      "reforzar": "Quienes quieren reforzar lo aprendido",
+      "reforzar_desc": "Usuarios con base (nivel básico/intermedio) que buscan repasar y mantener hábitos con quizzes cortos.",
+      "reforzar_edad": "Edad 13–30",
+      "reforzar_interes": "Interés: práctica periódica",
+      "reforzar_preferencia": "Preferencia móvil y web",
+      "mentores": "Hablantes avanzados / mentores",
+      "mentores_desc": "Personas con dominio fluido que desean compartir su conocimiento y recibir reconocimiento.",
+      "mentores_edad": "Edad 20–40",
+      "mentores_interes": "Interés: retos avanzados y recompensas",
+      "mentores_beneficio": "Beneficio: monetización / visibilidad"
+    },
+    "benefits": {
+      "titulo": "Beneficios clave",
+      "practico": "Aprendizaje práctico",
+      "practico_desc": "Práctica real con hablantes y ejercicios que simulan situaciones reales.",
+      "motivacion": "Motivación constante",
+      "motivacion_desc": "Gamificación para mantener el hábito de estudio.",
+      "flexibilidad": "Flexibilidad",
+      "flexibilidad_desc": "Acceso desde cualquier dispositivo, en cualquier lugar."
+      },
+    "testimonials": {
+      "titulo": "Testimonios",
+      "sub": "Lo que dicen nuestros usuarios",
+      "1": {"text": "Con QuizzBee mejoré mi fluidez en solo 2 meses. Las sesiones en vivo con mentores son increíbles.", "author": "— Ana, estudiante (Perú)"},
+      "2": {"text": "Como mentor, gano puntos y visibilidad. La plataforma está bien diseñada para enseñar y ganar recompensas.", "author": "— Marcos, mentor (España)"},
+      "3": {"text": "Los retos me mantienen motivado cada día. Me encanta competir en las tablas.", "author": "— Lucia, usuaria (México)"}
+    },
+    "support": {
+      "titulo": "Soporte",
+      "text": "¿Necesitas ayuda? Visita nuestro centro de ayuda o contáctanos por correo:",
+      "email": "soporte@quizbee.example"
+    },
+    "faq": {
+      "titulo": "Preguntas frecuentes",
+      "1": {"q": "¿Es gratis?", "a": "Tenemos plan básico gratuito y planes premium con ventajas."},
+      "2": {"q": "¿Cómo encuentro mentores?", "a": "Hay un marketplace interno para conectarte con hablantes por idioma."},
+      "3": {"q": "¿Qué métodos de pago?", "a": "Tarjeta, PayPal y medios locales."}
+    },
+    "cta": {
+      "titulo": "Listo para practicar?",
+      "texto": "Empieza ahora y transforma tu aprendizaje con quizzes y sesiones reales.",
+      "empezar": "Empezar ahora",
+      "ver_testimonios": "Ver testimonios",
+      "appstore": "📱 Disponible en App Store",
+      "playstore": "🤖 Google Play",
+      "webapp": "O usa la Web App"
+    },
+    "footer": {
+      "copyright": "© 2025 QuizzBee. Todos los derechos reservados.",
+      "enlaces": "Enlaces",
+      "about": "Acerca",
+      "features": "Funcionalidades",
+      "empezar": "Empezar ahora",
+      "contacto": "Contacto",
+      "email": "soporte@quizbee.example",
+      "siguenos": "Síguenos",
+      "redes": "Twitter • Facebook • Instagram",
+      "transforma": "Empieza ahora y transforma tu aprendizaje con quizzes y sesiones reales."
+    }
+}
