@@ -13,7 +13,15 @@
     "titulo": "QuizzBee",
     "descripcion": "Learn languages by practicing: quizzes, challenges and sessions with real speakers — fun and effective!",
     "empezar": "Start now",
-    "ver_funcionalidades": "See features"
+    "ver_funcionalidades": "See features",
+    "stats": {
+      "quizzes": "Quizzes ",
+      "quizzes_desc": "Interactive",
+      "mentores": "Mentors ",
+      "mentores_desc": "Real speakers",
+      "recompensas": "Rewards ",
+      "recompensas_desc": "Points and prizes"
+    }
   },
   "videos": {
     "about_team": "About the team",
@@ -28,6 +36,30 @@
       "features": {
         "titulo": "Features",
         "sub": "Designed to practice and improve with motivation",
+        "login": {
+          "title": "Login",
+          "desc": "Access your account quickly and securely."
+        },
+        "profile": {
+          "title": "Profile view",
+          "desc": "Check and edit your personal information and progress."
+        },
+        "createquizzies": {
+          "title": "Create Quizzies",
+          "desc": "Create your own quizzes to practice and share."
+        },
+        "mycreations": {
+          "title": "My Creations",
+          "desc": "Access and manage all the quizzes you have created."
+        },
+        "plans": {
+          "title": "Plans",
+          "desc": "Choose the plan that best fits your needs."
+        },
+        "payments": {
+          "title": "Payment methods",
+          "desc": "Pay securely with different available options."
+        },
         "quiz": "Interactive quizzes",
         "quiz_desc": "Fast, by topic and with immediate feedback to consolidate your learning.",
         "retos": "Gamified challenges",

@@ -13,7 +13,15 @@
     "titulo": "QuizzBee",
     "descripcion": "Aprende idiomas practicando: quizzes, retos y sesiones con hablantes reales — ¡divertido y efectivo!",
     "empezar": "Empezar ahora",
-    "ver_funcionalidades": "Ver funcionalidades"
+    "ver_funcionalidades": "Ver funcionalidades",
+    "stats": {
+      "quizzes": "Quizzes ",
+      "quizzes_desc": "Interactivos",
+      "mentores": "Mentores ",
+      "mentores_desc": "Hablantes reales",
+      "recompensas": "Recompensas ",
+      "recompensas_desc": "Puntos y premios"
+    }
   },
   "videos": {
     "about_team": "Sobre el equipo",
@@ -28,6 +36,30 @@
       "features": {
         "titulo": "Funcionalidades",
         "sub": "Diseñadas para practicar y mejorar con motivación",
+        "login": {
+          "title": "Login",
+          "desc": "Accede de forma segura y rápida a tu cuenta."
+        },
+        "profile": {
+          "title": "Vista del perfil",
+          "desc": "Consulta y edita tu información personal y progreso."
+        },
+        "createquizzies": {
+          "title": "Crear Quizzies",
+          "desc": "Crea tus propios quizzes para practicar y compartir."
+        },
+        "mycreations": {
+          "title": "Mis Creaciones",
+          "desc": "Accede y gestiona todos los quizzes que has creado."
+        },
+        "plans": {
+          "title": "Planes",
+          "desc": "Elige el plan que mejor se adapta a tus necesidades."
+        },
+        "payments": {
+          "title": "Métodos de pago",
+          "desc": "Paga de forma segura con diferentes opciones disponibles."
+        },
         "quiz": "Quizzes interactivos",
         "quiz_desc": "Rápidos, por tema y con retroalimentación inmediata para consolidar tu aprendizaje.",
         "retos": "Retos gamificados",
